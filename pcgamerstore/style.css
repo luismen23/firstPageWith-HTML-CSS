@@ -12,10 +12,10 @@ body{
     margin: 0;
 }
 
-h1{font-size: 3.7em;}
-h2{font-size: 2.8em;}
-h3{font-size: 2em;}
-p{font-size: 1.25em;}
+h1{font-size: 7em;}
+h2{font-size: 6em;}
+h3{font-size: 4em;}
+p{font-size: 3em;}
 ul{list-style: none}
 
 .color1{
@@ -25,9 +25,12 @@ ul{list-style: none}
 /* SECCION 1 Y 2 */
 
 #entrada button{
-    height: 3rem;
-    padding: 0 2rem;
-    border-radius: 1.5rem;
+    /* height: 90px; */
+    /* width: 192px; */
+    margin-top: 4rem;
+    padding: 30px 50px;
+    border-radius: 3rem;
+    
     border: none;
     background: linear-gradient(
         -45deg, #9925ea, #338aff, #9925ea);
@@ -37,7 +40,7 @@ ul{list-style: none}
     background-position: 90% 0;
     color: #ffffff;
     transition: background 0.8s;
-    font-size: 20px;
+    font-size: 28px;
     cursor: pointer;   
 }
         
@@ -50,7 +53,7 @@ header .logo{
     margin: 0;
     padding: 25px 30px;
     font-weight: bold;
-    font-size: 33px;
+    font-size: 50px;
     color: rgba(2, 50, 138, 0.911);
 }
 
@@ -60,6 +63,7 @@ header a{
     color: rgba(2, 50, 138, 0.473);
     text-decoration: none;
     font-weight: bold;
+    font-size: 27px;
     
 }
 
@@ -97,12 +101,12 @@ header nav{
 }
 
 #entrada h1{
-    margin:50px 0px 7px 0;
+    margin: 50px 50px;
     padding: 5px
 }
 
 #quienes-somos .container{
-    margin: 20px;
+    margin: 0;
     padding: 250px 75px;
 }
 
@@ -118,7 +122,7 @@ header nav{
     text-align: center;
     color: rgba(0, 155, 103, 0.856);
     font-weight: bold;
-    margin: 0;
+    margin-bottom: 80px;
     padding: 40px;
 }
 
@@ -138,9 +142,9 @@ div .ubicacion{
     justify-content: center;
     height: 100%;
     margin: 50px 0;
-    padding: 1px;
+    /* padding: 25px; */
     border: 4px solid rgba(0, 0, 0, 0.322);
-    width: 200px;
+    width: 300px;
     border-radius: 100%;
     
 }
@@ -152,7 +156,7 @@ div .ubicacion{
 
 .ubicacion p{
     margin: 0;
-    font-size: 15px;    
+    font-size: 30px;    
 }
 
 /* SECCION 3 */
@@ -171,9 +175,9 @@ div .ubicacion{
 }
 
 #como-trabajamos h3{
-    margin: 5px 0 10px 0;
+    margin: 5px 0 20px 0;
     color: white;
-    font-size: 2.3rem;
+    font-size: 3rem;
 }
 
 #como-trabajamos button{
@@ -189,7 +193,7 @@ div .ubicacion{
     background-position: 90% 0;
     color: #ffffff;
     transition: background 0.8s;
-    font-size: 20px;
+    font-size: 30px;
     cursor: pointer;   
 }
 
@@ -199,7 +203,8 @@ div .ubicacion{
 
 .carta{
     padding: 40px;
-    margin: 25px;
+    margin: 0;
+    margin-bottom: 60px;
     border-radius: 1.5rem;
     background-repeat: no-repeat;
     background-size: cover;
@@ -238,13 +243,15 @@ div .ubicacion{
 
 #nuestros-profesionales li{
     display: flex;
-    margin: 20px 0;
+    margin: 0;
+    padding: 20px;
     align-items: center;
+    justify-content: center;
+    font-size: 30px;
 }
 
 #nuestros-profesionales ul{
-    padding-left: 10px;
-    padding-top: 20px;
+    padding: 40px;
 }
 
 
@@ -254,6 +261,8 @@ div .ubicacion{
      display: flex;
      flex-direction: column;
      justify-content: flex-end;
+     width: 60%;
+     margin-bottom: 40px;
      aspect-ratio: 1/1;
      position: relative;
      padding: 6rem;
@@ -350,7 +359,7 @@ div .ubicacion{
 }
 
 .pro h3{
-    font-size: 1.7rem;
+    font-size: 2rem;
     line-height: 1.2;
     font-weight: 900;
     letter-spacing: 0.03ch;
@@ -391,7 +400,7 @@ div .ubicacion{
 #estas-listo{
     background: radial-gradient(ellipse at bottom, #022227 5%, #000000 100%);
     position: relative;
-    height: 70vh;
+    height: 60vh;
     width: 100vw;
     margin: 0;
     display: grid;
@@ -412,7 +421,7 @@ div .ubicacion{
     font-family: "Montserrat", sans-serif;
     padding: 0 40px;
     margin: 0;
-    font-size: 100px;
+    font-size: 120px;
     letter-spacing: 3px;
     color: white;
     background: url("img/control.jpg");
@@ -432,8 +441,10 @@ div .ubicacion{
     align-items: center;
     justify-content: center;
     background: rgb(230, 228, 228);
-    
-    
+}
+.contac{
+    margin-bottom: 25px;
+    font-size: 40px;
 }
 
 #footer a{
@@ -444,9 +455,19 @@ div .ubicacion{
     text-align: right;
     padding-top: 20px;
     color: rgba(0, 0, 0, 0.733);
+    font-size: 30px;
 }
 
 #footer a:hover{
     box-shadow: 0 0.1rem 0.1rem rgba(13, 30, 36, 0.9);
    
+}
+
+#footer img{
+    width: 50px;
+    height: 50px;
+}
+
+@media (min-width: 720px){
+
 }
