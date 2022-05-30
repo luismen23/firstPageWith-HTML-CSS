@@ -12,10 +12,10 @@ body{
     margin: 0;
 }
 
-h1{font-size: 7em;}
-h2{font-size: 6em;}
-h3{font-size: 4em;}
-p{font-size: 3em;}
+h1{font-size: 3.2em;}
+h2{font-size: 2.7em;}
+h3{font-size: 2em;}
+p{font-size: 1.25em;}
 ul{list-style: none}
 
 .color1{
@@ -25,10 +25,9 @@ ul{list-style: none}
 /* SECCION 1 Y 2 */
 
 #entrada button{
-    margin-top: 4rem;
-    padding: 30px 50px;
-    border-radius: 3rem;
-    
+    margin-top: 3rem;
+    padding: 15px 29px;
+    border-radius: 2rem;
     border: none;
     background: linear-gradient(
         -45deg, #9925ea, #338aff, #9925ea);
@@ -38,7 +37,7 @@ ul{list-style: none}
     background-position: 90% 0;
     color: #ffffff;
     transition: background 0.8s;
-    font-size: 28px;
+    font-size: 20px;
     cursor: pointer;   
 }
         
@@ -51,7 +50,7 @@ header .logo{
     margin: 0;
     padding: 25px 30px;
     font-weight: bold;
-    font-size: 50px;
+    font-size: 30px;
     color: rgba(2, 50, 138, 0.911);
 }
 
@@ -61,7 +60,7 @@ header a{
     color: rgba(2, 50, 138, 0.473);
     text-decoration: none;
     font-weight: bold;
-    font-size: 27px;
+    font-size: 15px;
     
 }
 
@@ -99,7 +98,7 @@ header nav{
 }
 
 #entrada h1{
-    margin: 50px 50px;
+    margin: 40px 40px;
     padding: 5px
 }
 
@@ -141,7 +140,7 @@ div .ubicacion{
     height: 100%;
     margin: 50px 0;
     border: 4px solid rgba(0, 0, 0, 0.322);
-    width: 300px;
+    width: 200px;
     border-radius: 100%;
     
 }
@@ -153,7 +152,7 @@ div .ubicacion{
 
 .ubicacion p{
     margin: 0;
-    font-size: 30px;    
+    font-size: 15px;    
 }
 
 /* SECCION 3 */
@@ -174,11 +173,11 @@ div .ubicacion{
 #como-trabajamos h3{
     margin: 5px 0 20px 0;
     color: white;
-    font-size: 3rem;
+    font-size: 1.7rem;
 }
 
 #como-trabajamos button{
-    height: 2.8rem;
+    height: 2.5rem;
     padding: 0 1.5rem;
     border-radius: 1.3rem;
     border: none;
@@ -190,7 +189,7 @@ div .ubicacion{
     background-position: 90% 0;
     color: #ffffff;
     transition: background 0.8s;
-    font-size: 30px;
+    font-size: 20px;
     cursor: pointer;   
 }
 
@@ -199,7 +198,7 @@ div .ubicacion{
 }
 
 .carta{
-    padding: 40px;
+    padding: 20px 40px;
     margin: 0;
     margin-bottom: 60px;
     border-radius: 1.5rem;
@@ -241,15 +240,17 @@ div .ubicacion{
 #nuestros-profesionales li{
     display: flex;
     margin: 0;
-    padding: 20px;
+    padding: 5px;
     align-items: center;
     justify-content: center;
-    font-size: 28px;
+    font-size: 15px;
 }
 
 #nuestros-profesionales ul{
-    padding: 40px;
+    padding: 0px;
+    margin-top: 10x;
     text-align: center;
+    
 }
 
 
@@ -259,11 +260,11 @@ div .ubicacion{
      display: flex;
      flex-direction: column;
      justify-content: flex-end;
-     width: 60%;
-     margin-bottom: 40px;
+     width: 70%;
+     margin-bottom: 30px;
      aspect-ratio: 1/1;
      position: relative;
-     padding: 6rem;
+     padding: 2rem;
      color: #ffffff;
      backface-visibility: hidden;
      text-decoration: none;
@@ -357,7 +358,7 @@ div .ubicacion{
 }
 
 .pro h3{
-    font-size: 2rem;
+    font-size: 1.2rem;
     line-height: 1.2;
     font-weight: 900;
     letter-spacing: 0.03ch;
@@ -365,7 +366,7 @@ div .ubicacion{
 }
 
 .pro p{
-    font-size: 1.2rem;
+    font-size: 0.9rem;
     font-weight: 500;
     opacity: 0;
     transition: 300ms opacity linear, 300ms transform ease-in-out;
@@ -390,7 +391,7 @@ div .ubicacion{
 
 .luis img{
     margin-right: 5px;
-    height: 40px;
+    height: 30px;
 }
 
 /* SECCION 5 */
@@ -419,7 +420,7 @@ div .ubicacion{
     font-family: "Montserrat", sans-serif;
     padding: 0 40px;
     margin: 0;
-    font-size: 120px;
+    font-size: 65px;
     letter-spacing: 3px;
     color: white;
     background: url("img/control.jpg");
@@ -442,7 +443,7 @@ div .ubicacion{
 }
 .contac{
     margin-bottom: 25px;
-    font-size: 40px;
+    font-size: 15px;
 }
 
 #footer a{
@@ -453,7 +454,7 @@ div .ubicacion{
     text-align: right;
     padding-top: 20px;
     color: rgba(0, 0, 0, 0.733);
-    font-size: 30px;
+    font-size: 12px;
 }
 
 #footer a:hover{
@@ -462,11 +463,11 @@ div .ubicacion{
 }
 
 #footer img{
-    width: 50px;
-    height: 50px;
+    width: 25px;
+    height: 25px;
 }
 
-@media (min-width: 900px){
+@media (min-width: 800px){
     
     /* SECCION 1 */
 
@@ -545,12 +546,18 @@ div .ubicacion{
     }
 
     /* SECCION 3 */
+
+    #como-trabajamos h3{
+        margin-top: 30px;
+        font-size: 35px;
+    }
     
     #como-trabajamos .programas{
         display: flex;
         justify-content: center;
         align-items: center;
         max-width: 1200px;
+        min-width: 1000px;
         margin: auto;
         
     }
@@ -559,7 +566,7 @@ div .ubicacion{
         height: 230px;
         width: 100%;
         padding-top: 30px;
-        position: static;
+        
 
 
     }
@@ -569,7 +576,6 @@ div .ubicacion{
         color: rgb(255, 255, 255);
         font-weight: bold;
         position: static;
-        flex-wrap: nowrap;
     }
 
     .carta{
@@ -582,7 +588,7 @@ div .ubicacion{
     }
 
     .boton{
-        margin-top: 4vh;
+        margin-top: 7.5vh;
         justify-content: center;
         
     }
@@ -619,7 +625,6 @@ div .ubicacion{
 
     .contac{
         display: none;
-        font-size: 20px;
     }
 
     .center{
@@ -630,6 +635,11 @@ div .ubicacion{
     #footer a{
         align-items: center;
         margin-bottom: 15px;
+    }
+
+    #footer img{
+        width: 40px;
+        height: 40px;
     }
 
 }
