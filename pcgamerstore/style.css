@@ -244,11 +244,12 @@ div .ubicacion{
     padding: 20px;
     align-items: center;
     justify-content: center;
-    font-size: 30px;
+    font-size: 28px;
 }
 
 #nuestros-profesionales ul{
     padding: 40px;
+    text-align: center;
 }
 
 
@@ -465,7 +466,7 @@ div .ubicacion{
     height: 50px;
 }
 
-@media (min-width: 720px){
+@media (min-width: 900px){
     
     /* SECCION 1 */
 
@@ -544,7 +545,7 @@ div .ubicacion{
     }
 
     /* SECCION 3 */
-
+    
     #como-trabajamos .programas{
         display: flex;
         justify-content: center;
@@ -554,25 +555,36 @@ div .ubicacion{
         
     }
 
-    #como-trabajamos p{
-        display: inline-block;
-        color: #fff;
-        margin-bottom: 30px;
-        text-align: justify;
-        justify-content: center;
+    #como-trabajamos section{
+        height: 230px;
+        width: 100%;
+        padding-top: 30px;
+        position: static;
+
+
+    }
+
+    #como-trabajamos section p{
+        display: block;
+        color: rgb(255, 255, 255);
+        font-weight: bold;
+        position: static;
+        flex-wrap: nowrap;
     }
 
     .carta{
-        display: block;
         margin: 20px;
-        height: 500px;
+        margin-bottom: 0;
+        height: 550px;
+        width: 400px;
         box-shadow: 3px 3px 10px rgba(0, 0, 0, 1);
         
     }
 
-    #como-trabajamos button{
-        margin: 15px;
-        display: inline-block;
+    .boton{
+        margin-top: 4vh;
+        justify-content: center;
+        
     }
 
     /* SECCION 4 */
@@ -613,7 +625,6 @@ div .ubicacion{
     .center{
         font-size: 15px;
         display: flex;
-        text-align: right;
     }
 
     #footer a{
