@@ -13,7 +13,7 @@ body{
 }
 
 h1{font-size: 3.2em;}
-h2{font-size: 2.7em;}
+h2{font-size: 2.5em;}
 h3{font-size: 2em;}
 p{font-size: 1.25em;}
 ul{list-style: none}
@@ -120,7 +120,8 @@ header nav{
     color: rgba(0, 155, 103, 0.856);
     font-weight: bold;
     margin-bottom: 80px;
-    padding: 40px;
+    padding-bottom: 10px;
+    
 }
 
 div .ubicacion{
@@ -239,11 +240,12 @@ div .ubicacion{
 
 #nuestros-profesionales li{
     display: flex;
-    margin: 0;
     padding: 5px;
     align-items: center;
-    justify-content: center;
+    justify-content: left;
     font-size: 15px;
+    margin-left: 30px;
+    text-align: left;
 }
 
 #nuestros-profesionales ul{
@@ -380,13 +382,11 @@ div .ubicacion{
 
 
 #nuestros-profesionales .lm {
-    padding: 30px 0;
     margin: 0;
     align-items: center;
     display: flex;
     flex-flow: column;
     justify-content: center; 
-    flex-wrap: wrap;
 } 
 
 .luis img{
@@ -495,8 +495,8 @@ div .ubicacion{
         
     }
 
-    h1{font-size: 4em;}
-    h2{font-size: 3em;}
+    h1{font-size: 4.5em;}
+    h2{font-size: 3.3em;}
     h3{font-size: 2em;}
     p{font-size: 1.3em;}
 
@@ -599,15 +599,20 @@ div .ubicacion{
         flex-direction: row;
         background-color:rgba(145, 145, 145, 0.116);
         box-shadow: 3px 3px 10px rgba(0, 0, 0, 0.322);
+        max-width: 1200px;
+        margin: auto;
     }
 
     .pro{
+        margin-top: 30px;
         width: 300px;
     }
 
     #nuestros-profesionales li{
         font-size: 20px;
         padding: 5px;
+        justify-content: left;
+        margin-left: 50px;
     }
 
     /* SECCION 5 */
