@@ -104,7 +104,7 @@ header nav{
 
 #quienes-somos .container{
     margin: 0;
-    padding: 250px 75px;
+    padding: 250px 50px;
 }
 
 #quienes-somos p{
@@ -112,7 +112,8 @@ header nav{
     align-items: center;
     justify-content: center;
     text-align: justify;
-    flex-direction: column;
+    flex-direction: column; 
+    font-size: 15px;
 }
 
 .container h2{
@@ -142,7 +143,6 @@ div .ubicacion{
     margin: 50px 0;
     border: 4px solid rgba(0, 0, 0, 0.322);
     width: 200px;
-    border-radius: 100%;
     
 }
 
@@ -161,20 +161,23 @@ div .ubicacion{
 #como-trabajamos{
     background-color: rgba(137, 182, 250, 0.274);
     text-align: center;
+    
 }
 
 #como-trabajamos .container{
-    padding: 250px 75px;
+    padding: 250px 50px;
 }
 
 #como-trabajamos p{
     display: none;
+    text-shadow: 3px 5px 5px #000000;
 }
 
 #como-trabajamos h3{
     margin: 5px 0 20px 0;
     color: white;
     font-size: 1.7rem;
+    text-shadow: 3px 5px 5px #000000;
 }
 
 #como-trabajamos button{
@@ -192,6 +195,7 @@ div .ubicacion{
     transition: background 0.8s;
     font-size: 20px;
     cursor: pointer;   
+    font-weight: 900;
 }
 
 #como-trabajamos button:hover{
@@ -211,24 +215,24 @@ div .ubicacion{
 .carta:first-child{
     background-image: linear-gradient(
         0deg, 
-        rgba(0,0,0,0.5),
-        rgba(0,0,0,0.5)),
+        rgba(0, 0, 0, 0.8),
+        rgba(0, 0, 0, 0.65)),
     url("img/ensamblaje.jpg"); 
 }
 
 .carta:nth-child(2){
     background-image: linear-gradient(
         0deg, 
-        rgba(0,0,0,0.3),
-        rgba(0,0,0,0.3)),
+        rgba(0,0,0,0.7),
+        rgba(0,0,0,0.5)),
     url("img/componentes.webp"); 
 }
 
 .carta:nth-child(3){
     background-image: linear-gradient(
         0deg, 
-        rgba(0,0,0,0.2),
-        rgba(0,0,0,0.2)),
+        rgba(0,0,0,0.3),
+        rgba(0,0,0,0.5)),
     url("img/accesorios.jpg"); 
 }
 
@@ -268,56 +272,7 @@ div .ubicacion{
      position: relative;
      padding: 2rem;
      color: #ffffff;
-     backface-visibility: hidden;
      text-decoration: none;
-     overflow: hidden;
- }
-
- .pro::before, 
- .pro::after{
-     content: "";
-     width: 100%;
-     height: 100%;
-     position: absolute;
-     top: 0;
-     left: 0;
- }
-
- .pro::before{
-     background: linear-gradient(
-         to top,
-         hsl(0 0% 0% / 0.79) 0%,
-         hsl(0 0% 0% / 0.787) 7.8%,
-         hsl(0 0% 0% / 0.779) 14.4%,
-         hsl(0 0% 0% / 0.765) 20.2%,
-         hsl(0 0% 0% / 0.744) 25.3%,
-         hsl(0 0% 0% / 0.717) 29.9%,
-         hsl(0 0% 0% / 0.683) 34.3%,
-         hsl(0 0% 0% / 0.641) 38.7%,
-         hsl(0 0% 0% / 0.592) 43.3%,
-         hsl(0 0% 0% / 0.534) 48.4%,
-         hsl(0 0% 0% / 0.468) 54.1%,
-         hsl(0 0% 0% / 0.393) 60.6%,
-         hsl(0 0% 0% / 0.31) 68.3%,
-         hsl(0 0% 0% / 0.216) 77.3%,
-         hsl(0 0% 0% / 0.113) 87.7%,
-         hsl(0 0% 0% / 0) 100%,
-     );
-     transition: 300ms opacity linear;
- }
- 
- .pro::after{
-     background: linear-gradient(
-         45deg,
-         hsl(5 97% 63% / 0.7) 0,
-         hsl(5 97% 63% / 0) 100%,
-     );
-     opacity: 0;
-     transition: 300ms opacity linear;
- }
-
- .pro > *{
-     z-index: 1;
  }
 
  .pro img {
@@ -333,13 +288,6 @@ div .ubicacion{
      filter: grayscale(1);
      transition: filter 200ms ease, transform 250ms linear;
  }
-
-.pro:hover::after,
-.pro:focus::after,
-.pro:hover::before,
-.pro:focus::before{
-    opacity: 0.7;
-}
 
 .pro:hover p,
 .pro:focus p {
@@ -360,7 +308,7 @@ div .ubicacion{
 }
 
 .pro h3{
-    font-size: 1.2rem;
+    font-size: 0.9rem;
     line-height: 1.2;
     font-weight: 900;
     letter-spacing: 0.03ch;
@@ -368,7 +316,7 @@ div .ubicacion{
 }
 
 .pro p{
-    font-size: 0.9rem;
+    font-size: 0.7rem;
     font-weight: 500;
     opacity: 0;
     transition: 300ms opacity linear, 300ms transform ease-in-out;
@@ -434,27 +382,22 @@ div .ubicacion{
 /* SECCION 6 */
 
 #footer .container{
-    padding: 100px 75px 0px 75px;
-    display: flex;
-    flex-flow: column;
-    align-items: center;
     justify-content: center;
+    padding: 0 2px;
+    padding-top: 5px;
+    display: flex;
+    flex-flow: row;
     background: rgb(221, 221, 221);
-}
-.contac{
-    margin-bottom: 25px;
-    font-size: 15px;
-}
-
-#footer a{
-    margin: -5px;
 }
 
 .center{
-    text-align: right;
-    padding-top: 20px;
+    display: flex;
+    justify-content: right;
     color: rgba(0, 0, 0, 0.733);
     font-size: 12px;
+    background: rgb(221, 221, 221);
+    padding-right: 5px;
+    
 }
 
 #footer a:hover{
@@ -465,6 +408,7 @@ div .ubicacion{
 #footer img{
     width: 25px;
     height: 25px;
+    margin: 5px 15px;
 }
 
 @media (min-width: 800px){
@@ -496,12 +440,12 @@ div .ubicacion{
     }
 
     h1{font-size: 4.5em;}
-    h2{font-size: 3.3em;}
+    h2{font-size: 3.8em;}
     h3{font-size: 2em;}
     p{font-size: 1.3em;}
 
     header .logo{
-        font-size: 1.5Rem;
+        font-size: 1.5rem;
     }
 
     header a{
@@ -528,8 +472,8 @@ div .ubicacion{
         justify-content: center;
     }
 
-    .ubicacion p{
-        font-size: 1rem;
+    #quienes-somos p{
+        font-size: 1.3rem;
 
     }
 
@@ -558,17 +502,13 @@ div .ubicacion{
         align-items: center;
         max-width: 1200px;
         min-width: 1000px;
-        margin: auto;
-        
+        margin: auto;      
     }
 
     #como-trabajamos section{
         height: 230px;
         width: 100%;
-        padding-top: 30px;
-        
-
-
+        padding-top: 30px;        
     }
 
     #como-trabajamos section p{
@@ -608,6 +548,14 @@ div .ubicacion{
         width: 300px;
     }
 
+    .pro h3{
+        font-size: 1.3rem;
+    }
+
+    .pro p{
+        font-size: 1rem;
+    }
+
     #nuestros-profesionales li{
         font-size: 20px;
         padding: 5px;
@@ -624,27 +572,22 @@ div .ubicacion{
     /* SECCION 6 */
 
     #footer .container{
-        flex-direction: row;
-        justify-content: space-between;
-    }
-
-    .contac{
-        display: none;
+        
     }
 
     .center{
         font-size: 15px;
-        display: flex;
+        padding-right: 20px;
     }
 
     #footer a{
-        align-items: center;
-        margin-bottom: 15px;
+        margin: 0 10vw;
     }
 
     #footer img{
         width: 40px;
         height: 40px;
+        margin-top: 20px;
     }
 
 }
